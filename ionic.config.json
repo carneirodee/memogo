@@ -1,0 +1,7 @@
+{
+  "name": "memogo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
