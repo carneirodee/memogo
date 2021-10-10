@@ -6,11 +6,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Dashboard', url: '/folder/Inbox', icon: 'dash' },
+    { title: 'Dashboard', url: '/folder/Dashboard', icon: 'clipboard' },
     { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
     { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
+    { title: 'Help', url: '/folder/Help', icon: 'help-circle' },
+    { title: 'About', url: '/folder/About', icon: 'information-circle' },
+
   ];
-  public labels = ['Deutsch', 'English', 'Korean', 'Japanese', 'Russian', 'Spanish'];
+
+  public languages = [
+    { title: 'Deutsch', url: '/language/Deutsch', icon: '🇩🇪' },
+    { title: 'English', url: '/language/English', icon: '🇺🇸' },
+    { title: 'Korean', url: '/language/Korean', icon: '🇰🇷' },
+    { title: 'Japanese', url: '/language/Japanese', icon: '🇯🇵' },
+    { title: 'Russian', url: '/language/Russian', icon: '🇷🇺' },
+    { title: 'Spanish', url: '/language/Spanish', icon: '🇪🇸' },
+
+  ];
   constructor() {}
 }
