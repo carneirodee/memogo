@@ -1,0 +1,14 @@
+{
+  "sentence01": {
+    "sentence": "Hallo!",
+    "translation": "Olá",
+    "sound": "",
+    "record": ""
+  },
+  "sentence02": {
+    "sentence": "Guten Morgen!",
+    "translation": "Bom dia!",
+    "sound": "",
+    "record": ""
+  }
+}

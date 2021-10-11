@@ -26,3 +26,19 @@ ion-menu-button {
   #container a {
     text-decoration: none;
   }
+
+  span.sp-translation{
+    margin-left: 10px;
+    font-style: italic;
+    color: #8c8c8c;
+  }
+
+  ion-fab-button{
+    position: absolute;
+    left: 80%;
+    top: 90%;
+  }
+
+  ion-icon.play-sentente:active{
+    color: yellow;
+  }

@@ -1,8 +1,12 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>{{language}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ language }}</ion-title>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -11,9 +15,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ language }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list *ngFor="let p of data; let i = index">
+    <ion-item>
+      <ion-icon class="play-sentence" onClick="console.log('i')" name="play-circle"></ion-icon> 
+      <ion-label>{{p.sentence}}</ion-label> 
+      <span class="sp-translation">{{p.translation}}</span>
+    </ion-item>
+  </ion-list>
+  <ion-fab-button color="secondary"><ion-icon name="add"></ion-icon></ion-fab-button>
+
 </ion-content>
 
