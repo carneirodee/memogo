@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'language/:id',
     loadChildren: () => import('./language/language.module').then( m => m.LanguagePageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
   }
 ];
 

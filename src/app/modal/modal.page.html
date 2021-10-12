@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon (click)="dismiss()" name="close"></ion-icon>
+      {{p.sentence}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <p class="sentence">
+      <ion-button (click)="play()" fill="clear">
+        <ion-icon *ngIf="playing == false" slot="icon-only" name="play-circle"></ion-icon>
+        <ion-icon *ngIf="playing" slot="icon-only" name="pause"></ion-icon>
+      </ion-button>{{ p.sentence }}
+      <span class="translation">
+       / {{ p.translation }}
+      </span>
+    </p>
+
+    <ion-button color="light" shape="round" id="record" (click)="record()">
+      <ion-spinner color="danger" *ngIf="recording" name='dots'></ion-spinner>
+      <ion-icon color="danger" *ngIf="recording == false" slot="icon-only" name="mic"></ion-icon>
+    </ion-button>
+
+  </div>
+</ion-content>

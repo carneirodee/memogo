@@ -16,7 +16,7 @@
   </ion-header>
 
   <ion-list *ngFor="let p of data; let i = index">
-    <ion-item>
+    <ion-item (click)="presentModal(p)">
       <ion-icon class="play-sentence" onClick="console.log('i')" name="play-circle"></ion-icon> 
       <ion-label>{{p.sentence}}</ion-label> 
       <span class="sp-translation">{{p.translation}}</span>

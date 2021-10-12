@@ -1,0 +1,50 @@
+ion-toolbar ion-icon {
+    float: right;
+    position: relative;
+    font-size: x-large;
+}
+
+ion-title {
+    font-size: larger;
+    margin-bottom: -20px;
+}
+
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+#container p.sentence {
+    font-size: xx-large;
+    margin: 30px 0 30px 0;
+    line-height: 22px;
+    padding: 20px 0 0 20px;
+}
+
+#container p.sentence ion-button{
+    font-size: 20px;
+    margin-right: -15px;
+}
+
+span.translation {
+    font-style: italic;
+    font-size: x-large;
+    color: #8c8c8c;
+    margin-bottom: 40px;
+}
+
+p ion-button {
+    margin: 0 10px 20px 0;
+}
+
+#record {
+  font-size: 30px;
+  color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+}

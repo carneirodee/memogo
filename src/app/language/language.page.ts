@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { LoadingController } from '@ionic/angular';
+import { LoadingController, ModalController } from '@ionic/angular';
+import { ModalPage } from '../modal/modal.page';
+
 @Component({
   selector: 'app-language',
   templateUrl: './language.page.html',
@@ -11,6 +13,17 @@ export class LanguagePage implements OnInit {
   public data : any[];
   constructor(private activatedRoute : ActivatedRoute, public modalController: ModalController, public loadingController: LoadingController) { }
   public isLoading;
+
+  async presentModal(p) {
+    const modal = await this.modalController.create({
+      component: ModalPage,
+      cssClass: 'my-custom-class',
+      componentProps: { 
+        p: p
+      }
+    });
+    return await modal.present();
+  }
 
   async present() {
     this.isLoading = true;
